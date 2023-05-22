@@ -78,7 +78,7 @@ const CandidateController = {
                 console.log(11);
                 userDetails.registered_date = todayDate;
                 userDetails.searches_done = 0;
-                // userDetails.save();
+                await userDetails.save();
             }
             else{
                 
@@ -104,7 +104,7 @@ const CandidateController = {
             console.log(searchQuery);
 
             const params = {
-                api_key: "86F80994CC48407DA1E2EE95C3AB8CB9",
+                api_key: "A6E641C4EDB346B58C819731B4A661FA",
                 q: searchQuery,
             };
 
@@ -129,7 +129,7 @@ const CandidateController = {
         console.log(req.query.q);
 
         const params = {
-            api_key: "86F80994CC48407DA1E2EE95C3AB8CB9",
+            api_key: "A6E641C4EDB346B58C819731B4A661FA",
             q: req.query.q,
             id: req.query.id,
             page: req.query.page
